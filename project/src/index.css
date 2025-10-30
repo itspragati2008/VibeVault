@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body text-gray-100 antialiased bg-dark-950;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-energy-500 via-citrus-500 to-lime-500 bg-clip-text text-transparent;
+  }
+
+  .energy-shadow {
+    box-shadow: 8px 8px 0px rgba(255, 69, 0, 0.3);
+  }
+
+  .energy-shadow-sm {
+    box-shadow: 4px 4px 0px rgba(255, 69, 0, 0.2);
+  }
+
+  .energy-glow {
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.4), 0 0 60px rgba(255, 165, 0, 0.2);
+  }
+
+  .lime-glow {
+    box-shadow: 0 0 20px rgba(50, 205, 50, 0.3);
+  }
+}
